@@ -1,0 +1,107 @@
+<html>
+<title>exp-8</title>
+<head><h1><center>OBJECTS AND ARRAYS</center></h1></head>
+<body>
+<script>
+const fruits = {name:"mango",price:10,color:"yellow"};
+document.write(fruits.name);</script><br><script>
+document.write(fruits["price"]);
+</script><br>
+<h2>NESTED OBJECTS</h2>
+<p id="demo"></p>
+<script>
+let x = "";
+const student = {
+  course: "b.tech",
+  branch: "cse",
+  data: [
+    {name:"pandu", loc:["skl", "kkd", "rjy"]},
+    {name:"kiran", loc:["ndd", "hyd", "vzg"]}
+   ]
+}
+ for (let i in student.data)
+ {
+  x += "<h2>" + student.data[i].name + "</h2>";
+  for (let j in student.data[i].loc) 
+  {
+   x += student.data[i].loc[j] + "<br>";
+   }
+   }
+     document.getElementById("demo").innerHTML = x;
+</script>
+<h2>this operator</h2>
+<p id="demo"></p>
+<script>
+const student1={
+firstName:"Durga",
+lastName:"Rao",
+fullName:function()
+{
+return(this.firstName+" "+this.lastName).toUpperCase();
+}
+};
+document.getElementById("demo").innerHTML=student1.fullName();
+</script>
+<h3>CONVERTING OBJECT TO STRING</h3>
+<p id="demo1"></p>
+<script>
+const person1={
+       name:"Nani",
+       age:19,
+       city:"Rajahmundry"
+};
+const k2=JSON.stringify(person1);
+document.getElementById("demo1").innerHTML = k2;
+</script>
+<h2>ARRAYS</h2>
+<p id="demo3"></p>
+<script>
+let s1="<sul>"
+const clgname=["GIET","ADITYA","PRAGATHI","GIER","GGU"];
+for(let i=0;i<clgname.length;i++)
+{
+s1+="<h2>"+"<li>"+clgname[i]+"</li>"+"</h2>"
+}
+s1+="</ul>"
+document.getElementById("demo3").innerHTML = s1;
+</script>
+<h1>array metohds</h1>
+<h4>array to string seperated by comma</h4>
+<p id="demo4"></p>
+<script>
+const fruit1=["mango","banana","apple","orange"]
+let a=fruit1.toString();
+document.writeln(a);
+</script>
+<h4>after adding new element in end</h4>
+<script>
+let b=fruit1.push("lemon");
+document.writeln(b);
+</script>
+<h4>after deleting element from the end</h4>
+<script>
+let c=fruit1.pop();
+document.writeln(c);
+</script>
+<h4>deleting element from the starting element of an array</h4>
+<script>
+let d=fruit1.shift();
+document.writeln(d);
+</script>
+<h4>adding element from starting of an array </h4>
+<script>
+let e=fruit1.unshift("mango");
+document.writeln(e);
+</script>
+<h4>adding from the particular position</h4>
+<script>
+let f=fruit1.splice(2,1,"grapes");
+document.writeln(f);
+</script>
+<h4>returning array particular index position</h4>
+<script>
+let g=fruit1.slice(2);
+document.writeln(g);
+</script>
+</body>
+</html>
