@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>exp-9</title>
+</head>
+<body>
+<h1><center>DATE AND TIME IN JAVASCRIPT</CENTER></h1>
+<pre>
+<p id="demo"></p>
+<h2>1)CURRENT SYSTEM DATE AND TIME</h2>
+<script>
+const d1=new Date();
+document.write(d1);
+const d2=new Date(2005,05,07,08,09,10,11);
+document.getElementById("demo").innerHTML=(d2);
+const d3=new Date(2016,15,33,27,62,62,1002);
+alert(d3);
+</script>
+<h2>2)SEVEN VALUES</h2>
+<script>
+const d4=new Date(500,15,33,27,62,62,1002);
+document.write(d4);
+</script>
+<script>
+const d5=new Date(2016);
+document.write(d5);
+</script>
+<h2>3)MILLISECONDS</h2>
+<script>
+const d6=new Date(10000000);
+document.write(d6);
+</script>
+<h2>4)DATE STRING</h2>
+<h3>GETTING DATE</h3>
+<script>
+let date=new Date();
+var day=date.getDate();
+var month=date.getMonth()+1;
+var year=date.getFullYear();
+document.write("Today date is "+day+"/"+month+"/"+year);
+</script>
+<script>
+let d=new Date(1000000);
+var day=d.getDate();
+var month=d.getMonth()+1;
+var year=d.getFullYear();
+document.write("Default date is "+day+"/"+month+"/"+year);
+</script>
+<script>
+const d8=new Date(2016,1,28);
+d8.getDate()+2;
+document.write(d8);
+</script>
+<h3>SETTING DATE</h3>
+<script>
+const d7=new Date(2016,1,28);
+d7.setDate(d7.getDate()+2);
+document.write(d7);
+</script>
+<script>
+const d7=new Date(2016,5,28);
+d7.setDate(d7.getMinutes()+20);
+document.write(d7);
+</script>
+<h4>CURRENT TIME IN NUMBER FORMAT</h4>
+<script>
+let d9=new Date();
+var hour=d9.getHours();
+var minute=d9.getMinutes();
+var second=d9.getSeconds();
+document.write("Current time is"+hour+":"+minute+":"+second);
+</script>
+</pre>
+</body>
+</html>
