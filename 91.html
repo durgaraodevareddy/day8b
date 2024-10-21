@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<p id="time"></p>
+<pre>
+<script>
+let d1=new Date()	//return current date and time document.writeln (d1)
+let d2=new Date(2016,0,32,10,50,50,15)
+alert(d2)
+const d3=new Date("2017 November 10 ") // we can pass the date in the form of string document.getElementById ("time").innerHTML=d3
+var d4=new Date(100000000)	//passing milliseconds document.writeln(d4)
+let d5=new Date(01,55,25)	//It accepts only 00-99 only document.writeln(d5)
+let d6=new Date(2016,1,28)	//adding no. Of days to given date d6.setDate(d6.getDate()+2)
+alert(d6)
+let d7=new Date(2016,1,28,10,55,10)	//adding no.of seconds to given date d7.setSeconds(d7.getSeconds()+20)
+document.writeln(d7)
+var d8=new Date(2016,0,2) d8.setDate(1) document.writeln(d8)
+var d9=new Date(2016,0,2) d9.setDate(0) document.writeln(d9)
+</script>
+</pre>
+</body>
+</html>
