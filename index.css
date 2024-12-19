@@ -1,0 +1,432 @@
+*{
+margin:0px;
+padding:0px;
+box-sizing: border-box;
+font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: black;
+    color:white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient( to bottom ,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fit/w_828,h_466,q_70,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZjU2MmFhZjQtNWRiYi00NjAzLWEzMmItNmVmNmMyMjMwMTM2XC9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LOYKSxIDqfPwWHR0SSJ-ugGQ6bECF0yO6Cmc0F26CQs");
+  background-size: cover;
+  background-position: center;
+
+  padding: 10px 8%;
+  position: relative;
+  
+}
+
+nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding:10px  0px;
+
+}
+
+nav button{
+    border: 10px;
+    color:white;
+    background:#db0001;
+    font-size: 12px;
+    border-radius: 8px;
+margin-left:10px ;
+cursor: pointer;
+padding:10px 30px;
+
+}
+.language{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 3px solid white;
+    padding:7px 10px;
+   
+}
+.language img{
+    width: 10px;
+    margin-left: 10px;
+    background-color: aliceblue;
+}
+
+.header-container{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-container h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 570;
+    max-width: 650px;
+
+}
+.header-container h3{
+    font-weight: 400px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.email-signup{
+    
+    border-radius:4px ;
+    
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    padding-left: 20px;
+    border: 2px solid rgb(27, 26, 26);
+    padding: 13.5px 15px ;
+    margin-right: 10px;
+    background-color: #2d2c2c;
+    
+    
+    
+
+}
+.email-signup button{
+    background-color:red;
+    border: 0px;
+    color: antiquewhite;
+    font-size: 16px;
+    cursor: pointer;
+    padding:15px 30px;
+
+}
+.row .Trending{
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0px 20px;
+}
+.recently-added{
+    width:190px;
+    height: 210px;
+    border-radius: 30%;
+    background-color: #0e0e0e;
+    border-radius: 14px;
+    margin-left: 1.8%;
+    margin-top: 0px;
+    justify-content: center;
+    box-shadow: 1px 3px 2px 2px hsl(0, 0%, 5%);
+cursor: pointer;
+transition:transform 1ms;
+
+}
+
+.recently-added:hover{
+    transform: scale(1.2);
+    
+    }
+
+/*
+
+.recently-added1{
+    width:180px;
+    height: 200px;
+    border-radius: 30%;
+    background-color: #0e0e0e;
+    border-radius: 14px;
+    margin-left: 10%;
+    margin-top: 20px;
+    justify-content: center;
+    box-shadow: 10px 15px 20px 20px hsl(0, 0%, 5%);
+cursor: pointer;
+
+}
+.recently-added2{
+    width:180px;
+    height: 200px;
+    border-radius: 30%;
+    background-color: #0e0e0e;
+    border-radius: 14px;
+    margin-left: 10%;
+    margin-top: 20px;
+    justify-content: center;
+    box-shadow: 10px 15px 20px 20px hsl(0, 0%, 5%);
+cursor: pointer;
+
+}
+
+.recently-added3{
+    width:180px;
+    height: 200px;
+    border-radius: 30%;
+    background-color: #0e0e0e;
+    border-radius: 14px;
+    margin-left: 10%;
+    margin-top: 50px;
+    justify-content: center;
+    box-shadow: 10px 15px 20px 20px hsl(0, 0%, 5%);
+cursor: pointer;
+
+}
+
+.recently-added4{
+    width:180px;
+    height: 200px;
+    border-radius: 30%;
+    background-color: #0e0e0e;
+    border-radius: 14px;
+    margin-left: 10%;
+    margin-top: 20px;
+    justify-content: center;
+    box-shadow: 2px 5px 2px 2px hsl(0, 0%, 5%);
+cursor: pointer;
+
+}
+
+.recently-added5{
+    width:180px;
+    height: 200px;
+    border-radius: 30%;
+    background-color: #0e0e0e;
+    border-radius: 14px;
+    margin-left: 10%;
+    margin-top: 20px;
+    justify-content: center;
+    box-shadow: 10px 15px 20px 20px hsl(0, 0%, 5%);
+cursor: pointer;
+
+}
+
+.recently-added6{
+    width:180px;
+    height: 200px;
+    border-radius: 30%;
+    background-color: #0e0e0e;
+    border-radius: 14px;
+    margin-left: 10%;
+    margin-top: 20px;
+    justify-content: center;
+    box-shadow: 10px 15px 20px 20px hsl(0, 0%, 5%);
+cursor: pointer;
+overflow: hidden;
+
+}
+*/
+
+.text-col{
+    width: 100%;
+    height: 260px;
+    
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+
+}
+.text-col::-webkit-scrollbar{
+    display:none;
+    
+}
+.row .Trending{
+    margin: 20px 0px 10px 50px;
+    font-size: 30px;
+   
+}
+.added{
+    background-color: #db0001;
+    padding:2px;
+    
+}
+
+.features{
+    padding: 10px 12%;
+    font-size: 22px;
+    display:flex;
+    cursor: pointer;
+    border: 0px solid rgb(19, 20, 19);
+    margin-top:  20px;
+    object-fit:contain ;
+    max-width: 100%;
+    
+
+
+}
+
+.cards-container h2{
+    margin-top:10px;
+    margin-left: 10px;
+}
+.card{
+    
+    width: 100%;
+    height: 200px;
+    background-color: #210747;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 40px;
+    padding: 20px 50px 50px 20px ;
+    box-shadow: 20px solid rgb(130, 3, 35);
+    transition:transform 1ms;
+
+}
+
+.card:hover{
+    transform: scale(0.9);
+    
+    }
+.card img{
+    
+    height:auto;
+    align-content:end;
+    justify-content: end;
+    text-align: end;
+
+    margin-left: 92%;
+    border-radius: 2px;
+    padding-bottom: 20px;
+
+}
+.card-content{
+    padding:50px;
+
+}
+.cards-content h3{
+    font-size: 28px;
+    margin-left: 10px
+    
+}
+.card p{
+    color:#8e8b8b;
+    font-size: 20px;
+    margin-top:20px;
+    margin-right: 40%;
+
+}
+ .frquency h2{
+    margin-left: 20px;
+ }
+ .accordion{
+    margin: 1% auto;
+    width:100%;
+max-width:750px;
+ }
+ .accordion li{
+    list-style: none;
+ width:100%;
+padding:10px;
+}
+.accordion li label{
+    display:flex;
+    align-items: center;
+    padding:19px;
+    font-size:18px;
+    font-weight:500 ;
+    background:dimgrey;
+    margin-bottom:1px;
+    cursor: pointer;
+    position: relative;
+
+}
+input[type="radio"]{
+display: none;
+}
+label::after{
+    content:'+';
+    font-size:34px;
+    position: absolute;
+    right:20px;
+
+
+}
+.accordion .content{
+    background:rgb(70, 69, 69) ;
+    text-align: :left;
+    padding:0px 20px;
+    max-height:0px;
+    overflow:hidden;
+    
+}
+.accordion input[type="radio"]:checked + label + .content{
+max-height: 600px;
+padding:30px 20px
+}
+
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+small{
+    align-items: center center;
+    margin-left: 37%;
+    font-size: 16px;
+    
+}
+
+
+/*....................................footer...........................*/
+
+.footer{
+    padding:50px 15% 10px;
+    border-top:6px  solid rgb(50, 49, 49);
+    color:rgb(151, 143, 143);
+}
+.footer h2{
+    font-size: 81%;
+    font-weight: 600;
+    margin-bottom: 30px;
+    
+
+}
+
+.footer .col {
+    flex-basis:25%;
+    flex-grow:1;
+    margin-bottom: 20px;
+    
+}
+
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color:darkgray;
+
+font-size:14px;
+margin-bottom: 10px;
+
+}
+
+.footer .row{
+    align-items:flex-start ;
+
+}
+.netflixlinks{
+    display: flex;
+}
+.footer .language{
+color:white;
+padding:10px 20px ;
+border-radius: 30px;
+
+}
+.Netflix-india{
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+----------------------media-queries-for-small-screen---------------
+@media only screen and (max-width: 600px){
+ .smallscreen{
+    width:100%;
+ }
+ 
+}
+    
+
